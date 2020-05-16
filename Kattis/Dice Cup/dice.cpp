@@ -1,4 +1,3 @@
-//This is stolen from William Lin: https://www.youtube.com/channel/UCKuDLsO0Wwef53qdHPjbU2Q
 #include <bits/stdc++.h>
 using namespace std;
 
