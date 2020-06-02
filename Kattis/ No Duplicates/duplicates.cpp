@@ -4,14 +4,20 @@ using namespace std;
 void solve()
 {
     string s;
-	set<string> maps;
-	bool rep = false;
-	while (cin >> s && !rep){
-		if (!maps.count(s)) maps.insert(s);
-		else rep = true;
-	}
-	if (rep) cout << "no" << endl;
-	else cout << "yes" << endl;
+    unordered_set<string> set;
+    bool duplicate = false;
+    while (cin >> s)
+    {
+        if (!set.count(s))
+            set.insert(s);
+        else
+        {
+            duplicate = true;
+            break;
+        }
+    }
+    duplicate ? cout << "no" : cout << "yes";
+    cout << endl;
 }
 
 int main()
