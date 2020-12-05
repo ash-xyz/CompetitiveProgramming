@@ -17,7 +17,7 @@ def find_max_seat_id():
 
 def find_missing_id():
     print(
-        f"Alternative: {[(seat + 1) for seat in seat_ids if (seat+1) not in seat_ids]}")
+        f"Alternative: {[(seat + 1) for seat in seat_ids if (seat+1) not in seat_ids and seat!=max(seat_ids)]}")
     print(
         f"Actual: {(((max(seat_ids) + min(seat_ids))//2)*(len(seat_ids)+1))-sum(seat_ids)}")
 
